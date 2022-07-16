@@ -49,7 +49,7 @@ void push(STACK1 *stack, int input){
 void printstack(STACK1 *stack){
    int i;
    for (i=0;i<=stack->back;i++){
-    printf("%d\n",stack->data[i]);
+        printf("%d\n",stack->data[i]);
    }
    printf("\n");
 }
