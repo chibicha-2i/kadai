@@ -86,7 +86,7 @@ void enqueue(QUEUE1 *queue, int input){
     }
     queue->data[(queue->back+1)%MAX_NUM]=input;
     queue->back=(queue->back+1)%MAX_NUM;
-    printf("%d\n",queue->back);
+    
 }
 
 int dequeue(QUEUE1 *queue){
