@@ -11,7 +11,7 @@ typedef struct stack{
 typedef struct queue{
     int back;
     int head;
-    int data[MAX_NUM];
+    int data[MAX_NUMqueue];
     
 }QUEUE1;
 
