@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX_NUM 4
+#define MAX_NUM 10000
 //構造体
 typedef struct stack{
     int back;
@@ -82,7 +82,7 @@ void enqueue(QUEUE1 *queue, int input){
         return;
     }
     if (queue->back+1>=MAX_NUM-1){
-        clear1(queue);
+        clear1(queue);  //初期化
     }
     queue->data[(queue->back+1)%MAX_NUM]=input;
     queue->back=(queue->back+1)%MAX_NUM;
